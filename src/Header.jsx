@@ -5,9 +5,12 @@ import Typography from "@mui/material/Typography";
 function Header() {
   return (
     <header>
-      <div style={{ display: "flex" }}>
-        <img src={noteIcon} alt="" />
-        <h1>NotZ</h1>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <div style={{ display: "flex" }}>
+          <img src={noteIcon} alt="" />
+          <h1>NotZ</h1>
+        </div>
+
         <Typography
           variant="body1"
           color="white"
