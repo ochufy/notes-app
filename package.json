@@ -1,0 +1,28 @@
+{
+  "name": "notes-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/material": "^5.11.6",
+    "axios": "^1.2.5",
+    "cross-fetch": "^3.1.5",
+    "pocketbase": "^0.10.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.26",
+    "@types/react-dom": "^18.0.9",
+    "@vitejs/plugin-react": "^3.0.0",
+    "vite": "^4.0.0"
+  }
+}
