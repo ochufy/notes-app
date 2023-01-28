@@ -56,7 +56,6 @@ function App() {
       )
       .then((response) => {
         setIsAdded(!isAdded);
-        console.log(response);
       })
       .catch((err) => {
         console.log(err);
@@ -78,7 +77,6 @@ function App() {
         config
       )
       .then((response) => {
-        console.log(response.data.items);
         let data = response.data.items;
         data = data.reverse();
         setNotes(data);
@@ -151,7 +149,6 @@ function App() {
           }}
         >
           {notes.map((noteItem, index) => {
-            console.log(noteItem);
             return (
               <Note
                 key={index}

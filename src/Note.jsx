@@ -1,7 +1,6 @@
 import React from "react";
 
 function Note(props) {
-  console.log(props.date);
   let date = new Date(props.date);
   date =
     date.toLocaleDateString("en-IN") +
