@@ -50,7 +50,7 @@ footer p {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
-.note p {
+.noteContent {
   font-size: 1.1em;
   margin-bottom: 10px;
   white-space: pre-wrap;
@@ -71,7 +71,7 @@ footer p {
 
 form.create-note {
   position: relative;
-  width: 480px;
+  width: min(45vw, 35%);
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;

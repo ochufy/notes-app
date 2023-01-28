@@ -143,7 +143,13 @@ function App() {
           <CircularProgress color="success" />
         </Box>
       ) : (
-        <Box sx={{ px: "2%" }}>
+        <Box
+          sx={{
+            px: "2%",
+            display: { xs: "flex", lg: "block", justifyContent: "center" },
+            flexWrap: "wrap",
+          }}
+        >
           {notes.map((noteItem, index) => {
             console.log(noteItem);
             return (
@@ -152,6 +158,7 @@ function App() {
                 id={index}
                 name={noteItem.name}
                 content={noteItem.content}
+                date={noteItem.created}
               />
             );
           })}
