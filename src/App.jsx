@@ -48,7 +48,7 @@ function App() {
     const data = note;
     await axios
       .post(
-        "https://notz.pockethost.io/api/collections/notes/records",
+        `${process.env.REACT_BACKEND_BASE_URL}/api/collections/notes/records`,
         data,
         config
       )
@@ -69,7 +69,10 @@ function App() {
       },
     };
     await axios
-      .get("https://notz.pockethost.io/api/collections/notes/records", config)
+      .get(
+        `${process.env.REACT_BACKEND_BASE_URL}/api/collections/notes/records`,
+        config
+      )
       .then((response) => {
         console.log(response.data.items);
         let data = response.data.items;
