@@ -5,7 +5,7 @@ import Tooltip from "@mui/material/Tooltip";
 
 function Footer() {
   return (
-    <footer>
+    <footer style={{ position: "fixed" }}>
       <p>
         Made by{" "}
         <a
