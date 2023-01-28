@@ -48,7 +48,9 @@ function App() {
     const data = note;
     await axios
       .post(
-        `${process.env.REACT_BACKEND_BASE_URL}/api/collections/notes/records`,
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASE_URL
+        }/api/collections/notes/records`,
         data,
         config
       )
@@ -70,7 +72,9 @@ function App() {
     };
     await axios
       .get(
-        `${process.env.REACT_BACKEND_BASE_URL}/api/collections/notes/records`,
+        `${
+          import.meta.env.VITE_REACT_APP_BACKEND_BASE_URL
+        }/api/collections/notes/records`,
         config
       )
       .then((response) => {
