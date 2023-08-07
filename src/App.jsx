@@ -144,7 +144,8 @@ function App() {
         <Box
           sx={{
             px: "2%",
-            display: { xs: "flex", lg: "block", justifyContent: "center" },
+            display: "flex",
+            justifyContent: "center",
             flexWrap: "wrap",
           }}
         >
